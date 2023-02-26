@@ -1,6 +1,6 @@
 <template>
-  <div class="max-w-screen-lg mx-auto py-8 w-70 bg-white opacity-25 rounded-lg">
-    <h2 class="text-2xl font-bold mb-4 text-center font-condensed opacity-100">Sponsors</h2>
+  <h2 class="text-2xl font-bold mb-4 text-center font-condensed opacity-100">Sponzori</h2>
+  <div class="max-w-screen-lg mx-auto py-8 w-70 bg-white omotac rounded-lg">
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 ml-15 opacity-100">
       <template v-for="(sponsor, index) in sponsors">
         <a v-if="sponsor.url && sponsor.logo" :key="sponsor.name" :href="sponsor.url" class="flex items-center justify-center h-20 sm:h-24">
@@ -20,49 +20,51 @@
 </template>
 
 <script>
-import img1 from '../assets/ecLogo.png'
-import img2 from '../assets/ecLogo2.png'
+import img1 from '../assets/etf_logo.png'
+import img2 from '../assets/Yettel_logo.png'
+import img3 from '../assets/pslogo.png'
+import img4 from '../assets/mozzartlogo.png'
 export default {
   data() {
     return {
       sponsors: [
         {
-          name: "Sponsor 1",
+          name: "",
+          logo: null,
+          url: null
+        },
+        {
+          name: "Yettel",
+          logo: img2,
+          url: 'https://www.yettel.rs/'
+        },
+        {
+          name: "",
+          logo: null,
+          url: null
+        },
+        {
+          name: "ETF",
           logo: img1,
-          url: 'https://www.google.com'
-        },
-        {
-          name: "Sponsor 2",
-          logo: null,
           url: null
         },
         {
-          name: "Sponsor 3",
-          logo: null,
-          url: null
-        },
-        {
-          name: "Sponsor 4",
-          logo: null,
-          url: null
-        },
-        {
-          name: "Sponsor 5",
-          logo: null,
+          name: "Mozzart",
+          logo: img4,
           url:  null
         },
         {
-          name: "Sponsor 6",
+          name: "",
           logo: null,
           url: null
         },
         {
-          name: "Sponsor 7",
-          logo: null,
+          name: "Playstudios",
+          logo: img3,
           url: null
         },
         {
-          name: "Sponsor 8",
+          name: "",
           logo: null,
           url: null
         }
@@ -94,6 +96,10 @@ img {
 
 .bg-white {
   background-color: #fff;
+}
+
+.omotac{
+  background-color: rgba(255,255,255,0.5);
 }
 
 .opacity-25 {
