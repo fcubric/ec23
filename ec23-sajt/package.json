@@ -6,7 +6,7 @@
     },
     "devDependencies": {
         "autoprefixer": "^10.4.13",
-        "axios": "^1.1.2",
+        "axios": "^1.3.3",
         "laravel-vite-plugin": "^0.7.2",
         "lodash": "^4.17.19",
         "postcss": "^8.4.21",
@@ -14,6 +14,8 @@
         "vite": "^4.0.0"
     },
     "dependencies": {
+        "tsparticles": "^2.9.3",
+        "vue3-particles": "^2.9.3",
         "vuex": "^4.0.2"
     }
 }

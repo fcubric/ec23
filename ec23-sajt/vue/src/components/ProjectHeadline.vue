@@ -1,16 +1,49 @@
 <template>
-    <div class="flex flex-col items-center p-4">
-      <h2 class="text-3xl font-bold text-center mb-4">EESTech Challenge o projektu</h2>
-      <p class="text-lg text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam accumsan libero ac gravida aliquam. Aenean vel nunc vel massa iaculis sollicitudin.</p>
-    </div>
-  </template>
-  
-  <script>
-  export default {
-    name: "ProjectHeadline"
-  };
-  </script>
-  
-  <style scoped>
-  </style>
-  
+    <div class="flex flex-col mx-auto p-4 max-w-screen-lg lg:max-w-2xl xl:max-w-3xl bg-opacity-30 bg-white omotac">
+      <h2 class="text-2xl font-bold text-center mb-4 font-condensed velicinaNaslov" style="color: white;">O projektu</h2>
+      <p class="text-base  my-3 text-justified font-condensed velicinaTekst" style="color: white;">
+        EESTech Challenge predstavlja internacionalno takmičenje koje organizuje Udruženje studenata elektrotehnike Evrope – Lokalni komitet Beograd (EESTEC LC Belgrade). Projekat za cilj ima pružanje prilika studentima da nadograde svoje znanje iz oblasti elektrotehnike i računarstva, kao i doprinos razvoju njihove profesionalne mreže. 
+        <br><br>Sastoji se iz 24-časovnog hakatona i dvodnevne konferencije na temu iz oblasti tehnologije koja je aktuelna te godine. Pobednici lokalnih rundi se takmiče u finalu koje se svake godine održava u različitom evropskom gradu.
+        <br><br>
+        Ove godine tema hakatona biće <b>Mobile App Development: Gamification</b>, što predstavlja proces implementacije elemenata i dinamike igara u aplikacije koje sa njima nisu nužno povezane. Pomaže pri povećanju angažmana i omogućuje korisnicima da se fokusiraju na svoje ciljeve tako što dosadnu rutinu pretvara u zabavno iskustvo. Primenom osnovne psihologije, gejmifikovane aplikacije se staraju o tome da motivišu korisnike da ih ponovo koriste dajući im osećaj dostignuća.
+
+      </p>
+  </div>
+</template>
+
+
+<script>
+export default {
+  name: "ProjectHeadline",
+};
+</script>
+
+<style scoped>
+  .font-condensed {
+    font-family: "Roboto Condensed", sans-serif;
+  }
+
+  .omotac {
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  .omotac {
+    width: 40%;
+    margin-left: 30%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .velicinaNaslov{
+    font-size: 3rem; /* 48px */
+    line-height: 1;
+  }
+
+  .velicinaTekst{
+    font-size: 1.25rem; /* 20px */
+    line-height: 1.75rem; /* 28px */
+  }
+}
+
+</style>
