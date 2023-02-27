@@ -1,5 +1,12 @@
 <template>
   <h2 class="text-2xl font-bold mb-4 text-center font-condensed opacity-100">Sponzori</h2>
+  <div class="max-w-screen-lg mx-auto py-8 px-8  bg-white omotac rounded-lg mb-8">
+      <div class="grid grid-cols-1 gap-8 ml-15 opacity-100">
+        <a href="https://www.playstudios.com/">
+          <img src="../assets/pslogo.png" width="100" height="100" alt="Generalni pokrovitelj" class=" object-contain transition-all duration-300 hover:scale-110">
+        </a>
+      </div>
+  </div>
   <div class="max-w-screen-lg mx-auto py-8 w-70 bg-white omotac rounded-lg">
     <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 ml-15 opacity-100">
       <template v-for="(sponsor, index) in sponsors">
@@ -46,12 +53,12 @@ export default {
         {
           name: "ETF",
           logo: img1,
-          url: null
+          url: 'https://www.etf.bg.ac.rs/'
         },
         {
           name: "Mozzart",
           logo: img4,
-          url:  null
+          url: 'https://www.mozzartbet.com/sr#/'
         },
         {
           name: "",
@@ -59,8 +66,8 @@ export default {
           url: null
         },
         {
-          name: "Playstudios",
-          logo: img3,
+          name: "",
+          logo: null,
           url: null
         },
         {

@@ -96,9 +96,9 @@
       <!-- <LatestNews id="news" class="my-8" :news="news" />  -->
       <Tabela class="my-8 mb-24" />
       <ProjectHeadline id="introduction" class="my-8" />
-      <Sponsors id="sponsors" class="my-8"></Sponsors>
+      <Sponsors id="sponsors" class="my-10"></Sponsors>
       <div class="flex-grow"></div> <!-- push footer to bottom -->
-      <Footer id="contact" class="w-full " />
+      <Footer id="contact" class="w-full mt-8" />
     </div>
   </div>
 </div>
