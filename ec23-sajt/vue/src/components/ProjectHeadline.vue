@@ -2,11 +2,9 @@
     <div class="flex flex-col mx-auto p-4 max-w-screen-lg lg:max-w-2xl xl:max-w-3xl bg-opacity-30 bg-white omotac">
       <h2 class="text-2xl font-bold text-center mb-4 font-condensed velicinaNaslov" style="color: white;">O projektu</h2>
       <p class="text-base  my-3 text-justified font-condensed velicinaTekst" style="color: white;">
-        EESTech Challenge predstavlja internacionalno takmičenje koje organizuje Udruženje studenata elektrotehnike Evrope – Lokalni komitet Beograd (EESTEC LC Belgrade). Projekat za cilj ima pružanje prilika studentima da nadograde svoje znanje iz oblasti elektrotehnike i računarstva, kao i doprinos razvoju njihove profesionalne mreže. 
-        <br><br>Sastoji se iz 24-časovnog hakatona i dvodnevne konferencije na temu iz oblasti tehnologije koja je aktuelna te godine. Pobednici lokalnih rundi se takmiče u finalu koje se svake godine održava u različitom evropskom gradu.
-        <br><br>
-        Ove godine tema hakatona biće <b>Mobile App Development: Gamification</b>, što predstavlja proces implementacije elemenata i dinamike igara u aplikacije koje sa njima nisu nužno povezane. Pomaže pri povećanju angažmana i omogućuje korisnicima da se fokusiraju na svoje ciljeve tako što dosadnu rutinu pretvara u zabavno iskustvo. Primenom osnovne psihologije, gejmifikovane aplikacije se staraju o tome da motivišu korisnike da ih ponovo koriste dajući im osećaj dostignuća.
-
+        <b>EESTech Challenge </b> predstavlja internacionalno takmičenje koje organizuje Udruženje studenata elektrotehnike Evrope – Lokalni komitet Beograd (EESTEC LC Belgrade). Projekat za cilj ima pružanje prilika studentima da nadograde svoje znanje iz oblasti elektrotehnike i računarstva, kao i doprinos razvoju njihove profesionalne mreže. 
+        <br><br>Sastoji se iz 24-časovnog <b> hakatona </b> i dvodnevne <b> konferencije </b> na temu iz oblasti tehnologije koja je aktuelna te godine. Pobednici lokalnih rundi se takmiče u finalu koje se svake godine održava u različitom evropskom gradu.
+        
       </p>
   </div>
 </template>

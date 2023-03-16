@@ -38,8 +38,8 @@
               quantity: 4,
             },
             repulse: {
-              distance: 200,
-              duration: 0.4,
+              distance: 20,
+              duration: 0.2,
             },
           },
         },
@@ -93,9 +93,10 @@
       <CountdownTimer class="my-8 mt-24"></CountdownTimer>
       <SlideShowSection id="slideshow" class="my-8 " />
       <Slideshow2></Slideshow2>
-      <!-- <LatestNews id="news" class="my-8" :news="news" />  -->
-      <Tabela class="my-8 mb-24" />
+     <LatestNews id="news" class="my-8 test" :news="news" />  
+      <Tabela class="my-8 mb-24" /> 
       <ProjectHeadline id="introduction" class="my-8" />
+      <Otemi class="my-8" />
       <Sponsors id="sponsors" class="my-10"></Sponsors>
       <div class="flex-grow"></div> <!-- push footer to bottom -->
       <Footer id="contact" class="w-full mt-8" />
@@ -115,6 +116,7 @@ import CountdownTimer from '../components/Timer.vue'
 import Tabela from '../components/Tabela.vue';
 import Slideshow2 from '../components/Slideshow2.vue'
 import { loadFull } from "tsparticles";
+import Otemi from '../components/Otemi.vue';
 
 
 export default {
@@ -124,6 +126,7 @@ export default {
     SlideShowSection,
     Slideshow2,
     ProjectHeadline,
+    Otemi,
     LatestNews,
     Footer,
     Sponsors,
@@ -164,4 +167,7 @@ export default {
   left: 0;
   z-index: -1;
 }
+
+
+
 </style>

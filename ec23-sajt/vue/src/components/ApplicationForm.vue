@@ -1,9 +1,9 @@
 <template>
     <div class="max-w-md mx-auto">
       <div class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-        <form action="https://formsubmit.co/f.cubric@gmail.com" method="POST" enctype="multipart/form-data">
+        <form action="https://formsubmit.co/f8566133bf6661727c43e0a72e9a72a9" method="POST" enctype="multipart/form-data">
           <div class="mb-4">
-            <label class="block font-condensed text-gray-700 font-bold mb-2" for="firstName">
+            <label class="block font-condensedd text-gray-700 font-bold mb-2" for="firstName">
               Ime
             </label>
             <input
@@ -17,7 +17,7 @@
             />
           </div>
           <div class="mb-4">
-            <label class="block font-condensed text-gray-700 font-bold mb-2" for="lastName">
+            <label class="block font-condensedd text-gray-700 font-bold mb-2" for="lastName">
               Prezime
             </label>
             <input
@@ -31,7 +31,7 @@
             />
           </div>
           <div class="mb-4">
-            <label class="block font-condensed text-gray-700 font-bold mb-2" for="university">
+            <label class="block font-condensedd text-gray-700 font-bold mb-2" for="university">
               Fakultet
             </label>
             <input
@@ -45,7 +45,7 @@
             />
           </div>
           <div class="mb-4">
-            <label class="block font-condensed text-gray-700 font-bold mb-2" for="phoneNumber">
+            <label class="block font-condensedd text-gray-700 font-bold mb-2" for="phoneNumber">
               Broj telefona
             </label>
             <input
@@ -59,7 +59,7 @@
             />
           </div>
           <div class="mb-4">
-            <label class="block font-condensed text-gray-700 font-bold mb-2" for="email">
+            <label class="block font-condensedd text-gray-700 font-bold mb-2" for="email">
               Email
             </label>
             <input
@@ -73,7 +73,7 @@
             />
           </div>
           <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2 font-condensed" for="teamName">
+            <label class="block text-gray-700 font-bold mb-2 font-condensedd" for="teamName">
               Ime tima
             </label>
             <div class="mb-4">
@@ -84,7 +84,7 @@
               v-model="form.individualno"
               name="individualno"
             />
-            <span class="ml-2 text-gray-700 font-condensed">Prijavljujem se individualno (u polje za ime tima ne upisujete ništa)</span>
+            <span class="ml-2 text-gray-700 font-condensedd">Prijavljujem se za <b>hakaton</b> individualno (nemam tim, bicu u ekipi koju vi oformite)</span>
           </label>
         </div>
             <input
@@ -98,7 +98,7 @@
   />
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2 font-condensed" for="teamName">
+            <label class="block text-gray-700 font-bold mb-2 font-condensedd" for="teamName">
               Link ka githubu (ili ka vašim projektima)
             </label>
             <input
@@ -108,16 +108,15 @@
               name="projekti"
               placeholder="Github link"
               v-model="form.githubLink"
-              required
             />
         </div>
         <div class="mb-4">
-  <label class="block text-gray-700 text-sm font-bold mb-2 font-condensed" for="cvUpload">
+  <label class="block text-gray-700 text-sm font-bold mb-2 font-condensedd" for="cvUpload">
     Upload CV <span v-if="cvFile">- {{ cvFile.name }}</span>
   </label>
   <div class="flex items-center justify-between">
     <input type="file" class="hidden" ref="cvInput" name="cv" @input="handleCVUpload">
-    <button type="button" class="font-condensed-dugme text-white px-4 py-2 rounded-lg focus:outline-none" @click="openCVUploadDialog">
+    <button type="button" class="font-condensedd-dugme text-white px-4 py-2 rounded-lg focus:outline-none" @click="openCVUploadDialog">
       Choose File
     </button>
   </div>
@@ -131,7 +130,7 @@
               name="hakaton"
               
             />
-            <span class="ml-2 text-gray-700 font-condensed">Prijavljujem se za hakaton</span>
+            <span class="ml-2 text-gray-700 font-condensedd">Prijavljujem se za hakaton</span>
           </label>
         </div>
         <div class="mb-6">
@@ -142,7 +141,7 @@
               v-model="form.predavanja"
               name="konferencija"
             />
-            <span class="ml-2 text-gray-700 font-condensed">Prijavljujem se za konferenciju</span>
+            <span class="ml-2 text-gray-700 font-condensedd">Prijavljujem se za konferenciju</span>
           </label>
         </div>
         
@@ -154,11 +153,11 @@
               v-model="form.rezim"
               name="rezim"
             />
-            <span class="ml-2 text-gray-700 font-condensed">Imam poseban režim ishrane</span>
+            <span class="ml-2 text-gray-700 font-condensedd">Imam poseban režim ishrane</span>
           </label>
         </div>
         <div class="mb-4">
-            <label class="block text-gray-700 font-bold mb-2 font-condensed" for="rezimtext">
+            <label class="block text-gray-700 font-bold mb-2 font-condensedd" for="rezimtext">
             </label>
             <input
               class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
@@ -170,11 +169,25 @@
              :disabled="!form.rezim"
             />
            </div>
+           <div class="mb-4">
+            <label class="block text-gray-700 font-bold mb-2 font-condensedd" for="teamName">
+              Dodatan komentar
+            </label>
+            <input
+              class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+              id="komentar"
+              type="text"
+              name="komentar"
+              placeholder="Komentar"
+              v-model="form.komentar"
+            />
+        </div>
+          
         <div class="flex items-center justify-between">
           <!-- <input type="hidden" name="_captcha" value="false">
           <input type="hidden" name="_cc" value="aleksa.jovanovic03@gmail.com"> -->
           <button
-            class=" font-condensed-dugme text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
+            class=" font-condensedd-dugme text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
           >
             Submit
@@ -202,7 +215,8 @@ export default {
         predavanja: false,
         individualno:false,
         rezim:false,
-        rezimtext:''
+        rezimtext:'',
+        komentar:'',
       },
       cvFile: null
     };
@@ -233,17 +247,17 @@ export default {
 </script>
 
 <style>
-.font-condensed {
+.font-condensedd {
     font-family: "Roboto Condensed", sans-serif;
     color: white;
   }
 
-.font-condensed-dugme{
+.font-condensedd-dugme{
   background-color: #113b60;
   font-family: "Roboto Condensed", sans-serif;
 }
 
-.font-condensed-dugme:hover{
+.font-condensedd-dugme:hover{
   background-color:#3B6B8E;
 }
 </style>

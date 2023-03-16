@@ -99,6 +99,13 @@ export default {
   align-items: center;
 }
 
+@media(min-width: 640px){
+  .container{
+    width:90%;
+    margin-left: 5%;
+  }
+}
+
 /* Countdown Title */
 .title {
   font-size: 24px;

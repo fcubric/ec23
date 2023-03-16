@@ -90,17 +90,19 @@
   <div>
     <NavBar/>
     <div class=" min-h-screen flex flex-col justify-center items-center">
-      <h1 class="text-3xl font-bold mb-6 font-condensed2 mt-4">
+      <h1 class="text-3xl font-bold mb-6 font-condensedd2 mt-4">
         Prijavi se za Eestech Challenge!
       </h1>
       <div class="max-w-md w-full">
         <div class=" mt-6 p-4 wrap rounded-lg  opacity-80">
-          <h2 class="text-lg font-medium mb-4 font-condensed">Napomene</h2>
+          <h2 class="text-lg font-medium mb-4 font-condensedd">Napomene</h2>
           <ul class="list-disc list-inside">
-            <li class="mb-2 font-condensed">Potrebno je da ponesete vaše laptopove, kao i sve što će vam biti potrebno tokom 24 sata  takmičenja.</li>
-            <li class="mb-2 font-condensed">Timovi mogu imati 3 ili 4 člana, svako od članova tima treba da pošalje prijavu sa istim imenom tima.</li>
-            <li class="mb-2 font-condensed">Ukoliko se prijavljujete individualno, čekirajte odgovarajuću opciju, a polje za ime tima ostavite prazno. Timovi će biti oformljeni po redosledu prijavljivanja.</li>
-            <!-- <li class="mb-2 font-condensed">Generalni pokrovitelj je najavio da je moguće da 24h neće biti dovoljno za izradu zadatka, te vam otkrivamo mehaniku igrice:.</li> -->
+            <li class="mb-2 font-condensedd">Potrebno je da ponesete vaše laptopove, kao i sve što će vam biti potrebno tokom 24 sata  takmičenja.</li>
+            <li class="mb-2 font-condensedd">Timovi mogu imati 3 člana, svako od članova tima treba da pošalje prijavu sa istim imenom tima.</li>
+            <li class="mb-2 font-condensedd">Ukoliko se prijavljujete individualno, čekirajte odgovarajuću opciju, a polje za ime tima ostavite prazno. Timovi će biti oformljeni po redosledu prijavljivanja.</li>
+            <li class="mb-2 font-condensedd">CV je moguce naknadno poslati na mejl eestech2022@gmail.com do 19. marta</li>
+            <li class="mb-2 font-condensedd">CV nije neophodno poslati ako se prijavljujete samo za konferenciju, dok je za hakaton neophodan.</li>
+            <!-- <li class="mb-2 font-condensedd">Generalni pokrovitelj je najavio da je moguće da 24h neće biti dovoljno za izradu zadatka, te vam otkrivamo mehaniku igrice:.</li> -->
             
           </ul>
         </div>
@@ -159,12 +161,12 @@
     background-color: rgb(255,255,255);
   }
 
-  .font-condensed {
+  .font-condensedd {
     font-family: "Roboto Condensed", sans-serif;
     color: #113B60CC;
   }
 
-  .font-condensed2 {
+  .font-condensedd2 {
     font-family: "Roboto Condensed", sans-serif;
     color: white;
   }

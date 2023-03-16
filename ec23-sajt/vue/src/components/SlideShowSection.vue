@@ -1,9 +1,9 @@
 <template>
   <div class="flex flex-col md:flex-row mt-10 mb-10 max-w-7xl mx-auto">
     <div class="md:w-1/2 px-6 bg-opacity-30 bg-white omotac">
-      <h1 class="text-5xl font-bold mb-6 font-condensed">Hakaton</h1>
-      <p class="text-gray-700 text-xl leading-relaxed mb-6 font-condensed my-10">
-        EESTech Challenge hakaton je 24-časovno inženjersko takmičenje koje će se održati <b> 24. i 25. marta </b> u prostorijama kompanije <b>Playstudios</b>. Na nivou lokalne runde se od takmičara očekuje da kreiraju igricu za mobilni uređaj. Pitch-ovanjem svoje ideje predstavnicima kompanije Playstudios biće odabran pobednik lokalne runde, odnosno tim koji će učestvovati na velikom evropskom finalu.
+      <h1 class="text-2xl font-bold mb-6 font-condensed velicinaNaslov">Hakaton</h1>
+      <p class="text-gray-700 text-base leading-relaxed mb-6 font-condensed velicinaTekst my-10">
+        EESTech Challenge hakaton je 24-časovno inženjersko takmičenje koje će se održati <b> 24. i 25. marta </b> u prostorijama generalnog pokrovitelja. Na nivou lokalne runde se od takmičara očekuje da kreiraju igricu za mobilni uređaj. Pitch-ovanjem svoje ideje predstavnicima generalnog pokrovitelja biće odabran pobednik lokalne runde, odnosno tim koji će učestvovati na velikom evropskom finalu.
 
       </p>
     </div>

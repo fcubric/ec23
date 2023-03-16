@@ -13,9 +13,6 @@
                       Tema
                     </th>
                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium font-condensed uppercase tracking-wider">
-                      Predavac
-                    </th>
-                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium font-condensed uppercase tracking-wider">
                       Datum
                     </th>
                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium font-condensed uppercase tracking-wider">
@@ -23,6 +20,9 @@
                     </th>
                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium font-condensed uppercase tracking-wider">
                       Mesto
+                    </th>
+                    <th scope="col" class="px-6 py-3 text-left text-xs font-medium font-condensed uppercase tracking-wider">
+                      Predavac
                     </th>
                   </tr>
                 </thead>
@@ -32,9 +32,6 @@
                       {{ row.tema }}
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap font-condensed">
-                      {{ row.predavac }}
-                    </td>
-                    <td class="px-6 py-4 whitespace-nowrap font-condensed">
                       {{ row.datum }}
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap font-condensed">
@@ -42,6 +39,9 @@
                     </td>
                     <td class="px-6 py-4 whitespace-nowrap font-condensed">
                       {{ row.mesto }}
+                    </td>
+                    <td class="px-6 py-4 whitespace-nowrap font-condensed">
+                      {{ row.predavac }}
                     </td>
                   </tr>
                 </tbody>
@@ -60,12 +60,12 @@
     data() {
       return {
         rows: [
-          { tema: 'Lorem', predavac: 'Ipsum',datum:"15.3.2023.", vreme: '10:00', mesto: 'A1' },
-          { tema: 'Dolor', predavac: 'Sit',datum:"15.3.2023.", vreme: '11:00', mesto: 'B2' },
-          { tema: 'Amet', predavac: 'Consectetur',datum:"15.3.2023.", vreme: '12:00', mesto: 'C3' },
-          { tema: 'Adipiscing', predavac: 'Elit',datum:"15.3.2023.", vreme: '13:00', mesto: 'D4' },
-          { tema: 'Sed', predavac: 'Do',datum:"15.3.2023.", vreme: '14:00', mesto: 'E5' },
-          { tema: 'Eiusmod', predavac: 'Tempor',datum:"15.3.2023.", vreme: '15:00', mesto: 'F6' },
+          { tema: 'Performansni problemi i rad u realtime okruženju na mobilnim aplikacijama', predavac: 'Dejan Marković',datum:"14.3.2023.", vreme: '14:00 - 15:00', mesto: 'Građevinski fakultet, sala 123' },
+          { tema: 'Izrada Tower Defense prototipa za 30 minuta', predavac: 'Zoran Trandafilović',datum:"14.3.2023.", vreme: '15:15 - 16:15', mesto: 'Građevinski fakultet, sala 123' },
+          { tema: 'Šta razvoj mobilnih igara može da nas nauči za razvoj boljih proizvoda?', predavac: 'Marko Jevremović',datum:"14.3.2023.", vreme: '16:30 - 17:30', mesto: 'Građevinski fakultet, sala 123' },
+          { tema: 'KOME I KAKO? - najvažnija pitanja za razvoj aplikacije kao biznis alata', predavac: 'Jelena Uzelac Vasić',datum:"15.3.2023.", vreme: '12:00 - 13:00', mesto: 'Arhitektonski fakultet, sala 320' },
+          { tema: 'Radionica: Izrada trkačke igre', predavac: 'Igor Sabo',datum:"15.3.2023.", vreme: '14:00 - 15:30', mesto: 'Arhitektonski fakultet, sala 320' },
+          { tema: 'Edukacione igre', predavac: 'Igor Sabo',datum:"15.3.2023.", vreme: '16:00 - 17:00', mesto: 'Arhitektonski fakultet, sala 320' },
         ],
       };
     },
@@ -79,7 +79,7 @@
 
   .wd{
     width:75%;
-    margin-left:15%;
+    margin-left:12.5%;
   }
   
   @keyframes fadein {
@@ -95,6 +95,11 @@
     text-align: left;
   }
   
+  @media screen and (max-width: 640px) {
+  
+
+}
+
   tr:hover {
     background-color: #036cad;
   }

@@ -14,8 +14,8 @@
         </div>
       </div>
       <div class="md:w-1/2 px-6 bg-opacity-30 bg-white omotac">
-        <h1 class="text-5xl font-bold mb-6 font-condensed">Informacije o  konferenciji</h1>
-        <p class="text-gray-700 text-xl leading-relaxed mb-6 font-condensed my-10">
+        <h1 class="text-2xl font-bold mb-6 font-condensed velicinaNaslov">Informacije o  konferenciji</h1>
+        <p class=" text-base leading-relaxed mb-6 font-condensed my-10 velicinaTekst">
             EESTech Challenge konferencija će se održati uživo 14. i 15. marta na Elektrotehničkom fakultetu u Beogradu. U okviru ova dva dana učesnici će imati priliku da prisustvuju predavanjima i interaktivnim radionicama koji će im približiti ovogodišnju temu. Stručni predavači će sa budućim inženjerima diskutovati o game development-u, analitici i teoriji igara, brendiranju… ali i raditi sa njima u popularnim game development alatima.
 
         </p>
@@ -60,9 +60,6 @@
   </script>
   
   <style scoped>
-  .text-navy {
-    color: #001f3f;
-  }
   
   .omotac {
     border-radius: 10px;
@@ -142,21 +139,5 @@
     background-color: #F3F4F6;
     border-radius: 10px;
   }
-  .project-title {
-    font-size: 2.5rem;
-    font-weight: bold;
-    color: #4B5563;
-    margin-bottom: 1.5rem;
-  }
-  .project-description {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
-    color: #6B7280;
-    margin-bottom: 2rem;
-  }
-  .project-link {
-    font-size: 1.25rem;
-    font-weight: bold;
-    color: #2563EB;
-  }
+  
 </style>
